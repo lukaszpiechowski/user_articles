@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:user_articles/app/Injection_container.dart';
+import 'package:user_articles/app/core/injection_container.dart';
 import 'package:user_articles/app/core/enums.dart';
 import 'package:user_articles/domain/models/author_model.dart';
 import 'package:user_articles/features/articles/page/articles_page.dart';
@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: BlocProvider<HomeCubit>(
         create: (context) {
-          return getIt()..start();
+          return getIt<HomeCubit>()..start();
         },
         child: BlocBuilder<HomeCubit, HomeState>(
           builder: (context, state) {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:user_articles/app/Injection_container.dart';
+import 'package:user_articles/app/core/injection_container.dart';
 import 'package:user_articles/features/home/page/home_page.dart';
 
 void main() {
-  configureDependecies();
+  configureDependencies();
   runApp(const MyApp());
 }
 
