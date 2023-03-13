@@ -10,10 +10,7 @@ part of 'authors_remote_data_source.dart';
 
 class _AuthorsRemoteRetrofitDataSource
     implements AuthorsRemoteRetrofitDataSource {
-  _AuthorsRemoteRetrofitDataSource(
-    this._dio, {
-    this.baseUrl,
-  });
+  _AuthorsRemoteRetrofitDataSource(this._dio);
 
   final Dio _dio;
 

@@ -10,10 +10,7 @@ part of 'articles_remote_data_source.dart';
 
 class _ArticlesRemoteRetrofitDataSource
     implements ArticlesRemoteRetrofitDataSource {
-  _ArticlesRemoteRetrofitDataSource(
-    this._dio, {
-    this.baseUrl,
-  });
+  _ArticlesRemoteRetrofitDataSource(this._dio);
 
   final Dio _dio;
 
